@@ -571,6 +571,14 @@
   display: block;
 } 
 
+.iot-center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* vertical centering */
+  min-height: 480px; /* or whatever height fits your design */
+}
+
 @media (max-width: 700px) {
   .hero-section {
     min-height: 100vh;
@@ -623,9 +631,19 @@
     font-size: 0.95rem;
     padding: 0.5rem 1rem;
   }
+  .iot-center-container {
+    min-height: 260px;
+    justify-content: flex-start;
+    padding-bottom: 5.9rem;
+  }
   .iot-network {
+    padding-left: 7rem;
     width: 180px;
     height: 180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .iot-node, .iot-node-center {
     width: 32px;

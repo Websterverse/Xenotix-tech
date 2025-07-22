@@ -207,56 +207,58 @@ const Hero = () => (
         </div>
       </div>
       <div className="iot-network-card">
-        <div className="iot-title">Curious About IoT..?</div>
-        <div className="iot-subtitle">Why Not Create It?</div>
-        <button className="iot-pracpoint-btn">Pracpoint →</button>
-        <div className="iot-network">
-          <svg className="iot-lines" width="320" height="320">
-            <circle cx="160" cy="160" r="110" fill="none" stroke="#44476a" strokeWidth="2" />
-            {iotNodes.map((_, i) => {
+        <div className="iot-center-container">
+          <div className="iot-title">Curious About IoT..?</div>
+          <div className="iot-subtitle">Why Not Create It?</div>
+          <button className="iot-pracpoint-btn">Pracpoint →</button>
+          <div className="iot-network">
+            <svg className="iot-lines" width="320" height="320">
+              <circle cx="160" cy="160" r="110" fill="none" stroke="#44476a" strokeWidth="2" />
+              {iotNodes.map((_, i) => {
+                const angle = (i / iotNodes.length) * 2 * Math.PI;
+                const x = 160 + 110 * Math.cos(angle);
+                const y = 160 + 110 * Math.sin(angle);
+                return (
+                  <line
+                    key={i}
+                    x1="160" y1="160"
+                    x2={x} y2={y}
+                    stroke="#44476a" strokeWidth="2"
+                  />
+                );
+              })}
+            </svg>
+            <div className="iot-node iot-node-center">🤖</div>
+            {iotNodes.map((node, i) => {
               const angle = (i / iotNodes.length) * 2 * Math.PI;
-              const x = 160 + 110 * Math.cos(angle);
-              const y = 160 + 110 * Math.sin(angle);
+              const x = 130 + 110 * Math.cos(angle);
+              const y = 130 + 110 * Math.sin(angle);
               return (
-                <line
+                <div
                   key={i}
-                  x1="160" y1="160"
-                  x2={x} y2={y}
-                  stroke="#44476a" strokeWidth="2"
+                  className="iot-node"
+                  style={{ left: x, top: y }}
+                  title={node.label}
+                >
+                  {node.icon}
+                </div>
+              );
+            })}
+            {userImgs.map((img, i) => {
+              const angle = (i / userImgs.length) * 2 * Math.PI + Math.PI / 6;
+              const x = 130 + 150 * Math.cos(angle);
+              const y = 130 + 150 * Math.sin(angle);
+              return (
+                <img
+                  key={i}
+                  src={img}
+                  alt="user"
+                  className="iot-user-img"
+                  style={{ left: x, top: y }}
                 />
               );
             })}
-          </svg>
-          <div className="iot-node iot-node-center">🤖</div>
-          {iotNodes.map((node, i) => {
-            const angle = (i / iotNodes.length) * 2 * Math.PI;
-            const x = 130 + 110 * Math.cos(angle);
-            const y = 130 + 110 * Math.sin(angle);
-            return (
-              <div
-                key={i}
-                className="iot-node"
-                style={{ left: x, top: y }}
-                title={node.label}
-              >
-                {node.icon}
-              </div>
-            );
-          })}
-          {userImgs.map((img, i) => {
-            const angle = (i / userImgs.length) * 2 * Math.PI + Math.PI / 6;
-            const x = 130 + 150 * Math.cos(angle);
-            const y = 130 + 150 * Math.sin(angle);
-            return (
-              <img
-                key={i}
-                src={img}
-                alt="user"
-                className="iot-user-img"
-                style={{ left: x, top: y }}
-              />
-            );
-          })}
+          </div>
         </div>
       </div>
     </div>
