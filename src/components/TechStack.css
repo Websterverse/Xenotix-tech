@@ -1,0 +1,79 @@
+.techstack-section {
+  /* background: radial-gradient(ellipse at 60% 0%, #23243a 60%, #0a0a13 100%); */
+  background: black;
+  min-height: 80vh;
+  padding: 4rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.techstack-title {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+}
+
+.techstack-subtitle {
+  color: #bdbdbd;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.techstack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.2rem;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.techstack-card {
+  background: linear-gradient(120deg,#0000 0%, #535050);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px #6c63ff22, 0 1.5px 8px #bf00ff33;
+  color: #fff;
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  backdrop-filter: blur(8px);
+}
+
+.techstack-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 0 32px #7c4dff, 0 4px 16px #23243a;
+}
+
+.techstack-icon {
+  font-size: 2.2rem;
+  margin-bottom: 1.1rem;
+  color: #6c63ff;
+  text-shadow: 0 0 12px #6c63ff55;
+}
+
+.techstack-card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: #fff;
+}
+
+.techstack-card-desc {
+  color: #bdbdbd;
+  font-size: 1.01rem;
+  font-weight: 400;
+  line-height: 1.5;
+} 

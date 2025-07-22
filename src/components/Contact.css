@@ -1,0 +1,114 @@
+.contact-section {
+  /* background: radial-gradient(ellipse at 60% 0%, #23243a 60%, #0a0a13 100%); */
+  background: black;
+  min-height: 80vh;
+  padding: 4rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  color: #fff;
+  font-size: 3.1rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+}
+
+.contact-subtitle {
+  color: #bdbdbd;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contact-row {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.contact-row input,
+.contact-row select {
+  flex: 1;
+  background: rgba(36, 37, 60, 0.85);
+  border: none;
+  border-radius: 0.8rem;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0;
+  box-shadow: 0 2px 12px #6c63ff22, 0 1.5px 8px #00ffae33;
+  outline: none;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.contact-row input:focus,
+.contact-row select:focus {
+  box-shadow: 0 0 16px #7c4dff;
+  background: rgba(36, 37, 60, 1);
+}
+
+.contact-row select {
+  color: #bdbdbd;
+}
+
+.contact-row textarea {
+  width: 100%;
+  background: rgba(36, 37, 60, 0.85);
+  border: none;
+  border-radius: 0.8rem;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 12px #6c63ff22, 0 1.5px 8px #00ffae33;
+  outline: none;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  resize: none;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.contact-row textarea:focus {
+  box-shadow: 0 0 16px #7c4dff;
+  background: rgba(36, 37, 60, 1);
+}
+
+.contact-submit {
+  width: 100%;
+  background: #23232b;
+  color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 1rem 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 0 12px #23232b44;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-submit:hover {
+  background: #353545;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .contact-row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+} 
