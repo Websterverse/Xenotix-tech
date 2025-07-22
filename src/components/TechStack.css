@@ -76,4 +76,26 @@
   font-size: 1.01rem;
   font-weight: 400;
   line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .techstack-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    width: 98vw;
+    max-width: 100vw;
+  }
+  .techstack-card {
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    min-height: 120px;
+  }
+  .techstack-title {
+    font-size: 1.3rem;
+  }
+  .techstack-card-title {
+    font-size: 1rem;
+  }
+  .techstack-card-desc {
+    font-size: 0.92rem;
+  }
 } 

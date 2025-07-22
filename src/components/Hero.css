@@ -570,3 +570,73 @@
   object-fit: contain;
   display: block;
 } 
+
+@media (max-width: 700px) {
+  .hero-section {
+    min-height: 100vh;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-brand {
+    font-size: 1.1rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .hero-title-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .floating-icon-row {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.2rem 0 0.7rem 0;
+  }
+  .floating-icon-square {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+  .floating-icon-img {
+    width: 22px;
+    height: 22px;
+  }
+  .hero-icons-row {
+    gap: 0.7rem;
+    margin-top: 0.7rem;
+  }
+  .iot-network-card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .iot-title {
+    font-size: 1.1rem;
+  }
+  .iot-subtitle {
+    font-size: 0.95rem;
+  }
+  .iot-pracpoint-btn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+  .iot-network {
+    width: 180px;
+    height: 180px;
+  }
+  .iot-node, .iot-node-center {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+  .iot-user-img {
+    width: 22px;
+    height: 22px;
+  }
+  .floating-cards-container, .left-floating-cards-container, .right-floating-cards-container {
+    display: none;
+  }
+} 

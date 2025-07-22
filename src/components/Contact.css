@@ -106,9 +106,48 @@
   color: #fff;
 }
 
+.contact-form, .contact-section {
+  box-sizing: border-box;
+}
+
+.contact-row input,
+.contact-row select,
+.contact-row textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 @media (max-width: 700px) {
+  .contact-section {
+    overflow-x: hidden;
+  }
+  .contact-form {
+    max-width: 92vw;
+    padding: 0 0.5rem;
+    overflow-x: hidden;
+    margin: 0 auto;
+  }
+  .contact-row input,
+  .contact-row select,
+  .contact-row textarea {
+    max-width: 92vw;
+    margin: 0 auto;
+  }
   .contact-row {
     flex-direction: column;
     gap: 0.7rem;
+  }
+  .contact-title {
+    font-size: 1.2rem;
+  }
+  .contact-subtitle {
+    font-size: 0.95rem;
+  }
+  .contact-submit {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 0;
   }
 } 
